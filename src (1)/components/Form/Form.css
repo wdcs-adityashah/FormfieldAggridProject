@@ -1,0 +1,124 @@
+
+body::-webkit-scrollbar {
+    width: 0px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F7F7F7; /* light gray background */
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 250px;
+}
+.heading_details{
+    margin: 30px 0px;
+    position: relative;
+    animation: scrollFromRight 5s ease-in-out forwards;
+
+}
+@keyframes scrollFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+.form-container {
+    border: 1px solid #E5E5E5; /* light gray border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  }
+.container{
+    max-width: 1800px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    width: 20%;
+  }
+  .fields {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: row;
+    grid-gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .name_field {
+    display: flex;
+    flex-direction: column;
+  }
+  .css-b62m3t-container{
+    width: 60%;
+  }
+.fields input{
+    outline: none;
+    border: none;
+    color: rgb(77, 77, 77);
+    background-color: rgb(240, 240, 240);
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 18px;
+}
+.btn_field{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 50px 0px;
+}
+.btn_field button{
+    outline: none;
+    border: 1px solid;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+}
+
+.name_details{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.name_field.country{
+    width: 100% !important;
+}
+.css-13cymwt-control{
+    width: 100% !important;
+}
+.error-message{
+    white-space: nowrap;
+    font-size: 14px;
+  color: #FF0000; /* red color for error messages */
+  margin-top: 10px;
+}
+
+
+button[type="submit"] {
+    background-color: #4CAF50; /* green color for submit button */
+    color: #FFFFFF; /* white text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="button"] {
+    background-color: #CCCCCC; /* light gray color for cancel button */
+    color: #333333; /* dark gray text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
